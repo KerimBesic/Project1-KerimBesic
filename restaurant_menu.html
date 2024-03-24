@@ -1,19 +1,20 @@
 <!DOCTYPE html>
 
 <head>
+ 
     <title>Restaurant Menu</title>
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #f7f7f7;
+            background-color: #ff9c4a;
             color: #333;
             margin: 0;
             padding: 0;
         }
 
         header {
-            background-color: #2c3e50;
-            color: #fff;
+            background-color: #f39c12; 
+            color: #090909;
             padding: 20px;
             text-align: center;
         }
@@ -21,6 +22,7 @@
         nav ul {
             list-style-type: none;
             padding: 0;
+            margin: 0; 
         }
 
         nav ul li {
@@ -29,14 +31,22 @@
         }
 
         nav ul li a {
-            color: #fff;
+            color: #060606;
             text-decoration: none;
+            font-size: 18px; 
+            padding: 10px 20px; 
+            border-radius: 8px; 
+            transition: background-color 0.3s ease;
+        }
+
+        nav ul li a:hover {
+            background-color: #e67e22; 
         }
 
         section {
             padding: 20px;
             margin-top: 20px;
-            background-color: #fff;
+            background-color: #ead12e;
         }
 
         section h2 {
@@ -54,9 +64,72 @@
             display: inline-block;
             margin-right: 20px; 
             vertical-align: top; 
-            
+            transition: transform 0.3s ease;
+            background-color: #be5f1ad2;
+            border-radius: 5px;
+            padding: 10px;
+           
         }
 
+        section ul li:hover {
+            transform: scale(1.1);
+        
+        }
+
+        section ul li img {
+            width: 300px;
+            height: 200px;
+            border-radius: 5px;
+        }
+
+        section ul li p {
+            margin: 10px 0;
+        }
+
+        .btn {
+            background-color: #d1960bf3;
+            color: #fff;
+            border: none;
+            padding: 8px 16px;
+            font-size: 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #e67e22;
+        }
+
+        footer {
+            background-color:#f39c12; 
+;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+            clear: both; 
+        }
+
+        footer nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin-bottom: 10px;
+        }
+
+        footer nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+
+        footer nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 16px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 14px;
+        }
     </style>
 </head>
 <body>
@@ -78,16 +151,19 @@
     <h2>Appetizers</h2>
     <ul>
         <li>
-            <img src="appetizer1.jpg" alt="Bruschetta" style="width: 400px; height: 250px;">
+            <img src="appetizer1.jpg" alt="Bruschetta">
             <p>Bruschetta - $8</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="appetizer2.jpg" alt="Mozzarella Sticks" style="width: 400px; height: 250px;">
+            <img src="appetizer2.jpg" alt="Mozzarella Sticks">
             <p>Mozzarella Sticks - $7</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="appetizer3.jpg" alt="Chicken Wings" style="width: 400px; height: 250px;">
+            <img src="appetizer3.jpg" alt="Chicken Wings">
             <p>Chicken Wings - $10</p>
+            <button class="btn">Order Now</button>
         </li>
     </ul>
 </section>
@@ -96,16 +172,19 @@
     <h2>Main Courses</h2>
     <ul>
         <li>
-            <img src="main1.jpg" alt="Spaghetti Bolognese" style="width: 400px; height: 250px;">
+            <img src="main1.jpg" alt="Spaghetti Bolognese">
             <p>Spaghetti Bolognese - $12</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="main2.jpg" alt="Grilled Salmon" style="width: 400px; height: 250px;">
+            <img src="main2.jpg" alt="Grilled Salmon">
             <p>Grilled Salmon - $15</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="main3.jpg" alt="Pizza" style="width: 400px; height: 250px;">
+            <img src="main3.jpg" alt="Pizza">
             <p>Pizza Bejza - $11</p>
+            <button class="btn">Order Now</button>
         </li>
     </ul>
 </section>
@@ -114,16 +193,19 @@
     <h2>Desserts</h2>
     <ul>
         <li>
-            <img src="dessert1.jpg" alt="Chocolate Cake" style="width: 400px; height: 250px;">
+            <img src="dessert1.jpg" alt="Chocolate Cake">
             <p>Chocolate Cake - $6</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="dessert2.jpg" alt="Apple Pie" style="width: 400px; height: 250px;">
+            <img src="dessert2.jpg" alt="Apple Pie">
             <p>Apple Pie - $5</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="dessert3.jpg" alt="Ice Cream" style="width: 400px; height: 250px;">
+            <img src="dessert3.jpg" alt="Ice Cream">
             <p>Ice Cream - $4</p>
+            <button class="btn">Order Now</button>
         </li>
     </ul>
 </section>
@@ -132,19 +214,34 @@
     <h2>Drinks</h2>
     <ul>
         <li>
-            <img src="drink1.jpg" alt="Soda" style="width: 400px; height: 250px;">
+            <img src="drink1.jpg" alt="Soda">
             <p>Soda - $2</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="drink2.jpg" alt="Water" style="width: 400px; height: 250px;">
+            <img src="drink2.jpg" alt="Water">
             <p>Water - $1</p>
+            <button class="btn">Order Now</button>
         </li>
         <li>
-            <img src="drink3.jpg" alt="Beer" style="width: 400px; height: 250px;">
+            <img src="drink3.jpg" alt="Beer">
             <p>Beer - $4</p>
+            <button class="btn">Order Now</button>
         </li>
     </ul>
 </section>
+
+<footer>
+    <nav>
+        <ul>
+            <li><a href="#about">About</a></li>
+            <li><a href="#location">Location</a></li>
+            <li><a href="#facebook">Facebook</a></li>
+            <li><a href="#instagram">Instagram</a></li>
+        </ul>
+    </nav>
+    <p> 2024 Bejza Restaurant. All rights reserved.</p>
+</footer>
 
 </body>
 </html>
